@@ -109,6 +109,8 @@ ol > li > ol > li:before{width:1.75em;}
 ol > li:before{width:1.25em;content:counters(item, ".") ". ";display:table-cell;}
 ol > li{display:table;counter-increment:item;margin-bottom:1em;}
 ol{list-style-type:none;counter-reset:item;margin:0;padding:0;}
+pre {background-color:#eee;max-width:100%;overflow:auto;padding:1em;}
+p code {background-color:#eee;padding: .2em .4em;border-radius: 2px;}
 .blu{color:#2c5871;}
 .btn-danger:hover{color:#fff;background-color:#ff0000;border-color:#df0000;text-decoration:none;}
 .btn-danger{color:#fff;background-color:#df0000;border-color:#bf0000;}
