@@ -4,8 +4,6 @@
 .htaccess
 EULA.txt
 README.txt
-_install_/
-about_linux.html
 admin/
 aff.php
 affiliates.php
@@ -51,7 +49,6 @@ package-lock.json
 phpmyadmin/
 pipe/
 poweradmin/
-privacy_policy.html
 private/
 public/
 pwreset.php
@@ -73,4 +70,3 @@ viewquote.php
 viewticket.php
 webmail/
 whois.php
-
