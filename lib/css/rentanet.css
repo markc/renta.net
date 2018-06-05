@@ -1,28 +1,28 @@
 @font-face{font-family:'Quicksand';font-style:normal;font-weight:300;src:local('Quicksand Light'),
 local('Quicksand-Light'),
-url('../fonts/Quicksand_300.eot?#iefix') format('embedded-opentype'),
-url('../fonts/Quicksand_300.woff') format('woff'),
-url('../fonts/Quicksand_300.woff2') format('woff2'),
-url('../fonts/Quicksand_300.svg#Quicksand') format('svg'),
-url('../fonts/Quicksand_300.ttf') format('truetype');}
+url('lib/fonts/Quicksand_300.eot?#iefix') format('embedded-opentype'),
+url('lib/fonts/Quicksand_300.woff') format('woff'),
+url('lib/fonts/Quicksand_300.woff2') format('woff2'),
+url('lib/fonts/Quicksand_300.svg#Quicksand') format('svg'),
+url('lib/fonts/Quicksand_300.ttf') format('truetype');}
 @font-face{font-family:'Quicksand';font-style:normal;font-weight:400;src:local('Quicksand Regular'),
 local('Quicksand-Regular'),
-url('../fonts/Quicksand_400.eot?#iefix') format('embedded-opentype'),
-url('../fonts/Quicksand_400.woff') format('woff'),
-url('../fonts/Quicksand_400.woff2') format('woff2'),
-url('../fonts/Quicksand_400.svg#Quicksand') format('svg'),
-url('../fonts/Quicksand_400.ttf') format('truetype');}
+url('lib/fonts/Quicksand_400.eot?#iefix') format('embedded-opentype'),
+url('lib/fonts/Quicksand_400.woff') format('woff'),
+url('lib/fonts/Quicksand_400.woff2') format('woff2'),
+url('lib/fonts/Quicksand_400.svg#Quicksand') format('svg'),
+url('lib/fonts/Quicksand_400.ttf') format('truetype');}
 @font-face{font-family:'Quicksand';font-style:normal;font-weight:500;src:local('Quicksand Medium'),
 local('Quicksand-Medium'),
-url('../fonts/Quicksand_500.eot?#iefix') format('embedded-opentype'),
-url('../fonts/Quicksand_500.woff') format('woff'),
-url('../fonts/Quicksand_500.woff2') format('woff2'),
-url('../fonts/Quicksand_500.svg#Quicksand') format('svg'),
-url('../fonts/Quicksand_500.ttf') format('truetype');}
-@font-face{font-family:'icomoon';src:url('../fonts/icomoon.eot?23xten');src:url('../fonts/icomoon.eot?23xten#iefix') format('embedded-opentype'),
-url('../fonts/icomoon.ttf?23xten') format('truetype'),
-url('../fonts/icomoon.woff?23xten') format('woff'),
-url('../fonts/icomoon.svg?23xten#icomoon') format('svg');font-weight:normal;font-style:normal;}
+url('lib/fonts/Quicksand_500.eot?#iefix') format('embedded-opentype'),
+url('lib/fonts/Quicksand_500.woff') format('woff'),
+url('lib/fonts/Quicksand_500.woff2') format('woff2'),
+url('lib/fonts/Quicksand_500.svg#Quicksand') format('svg'),
+url('lib/fonts/Quicksand_500.ttf') format('truetype');}
+@font-face{font-family:'icomoon';src:url('lib/fonts/icomoon.eot?23xten');src:url('lib/fonts/icomoon.eot?23xten#iefix') format('embedded-opentype'),
+url('lib/fonts/icomoon.ttf?23xten') format('truetype'),
+url('lib/fonts/icomoon.woff?23xten') format('woff'),
+url('lib/fonts/icomoon.svg?23xten#icomoon') format('svg');font-weight:normal;font-style:normal;}
 [class^="icon-"], [class*=" icon-"]{font-family:'icomoon' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;}
 .icon-envelope-o:before{content:"\f003";}
 .icon-user:before{content:"\f007";}
@@ -82,7 +82,7 @@ a{color:#2c5871;outline:none;transition:all .25s ease;}
 body{margin:0;padding:4.5em 0 0 0;font-size:16px;line-height:1.5;color:#2c5871;font-family:'Quicksand', sans-serif;font-weight:400;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);}
 html{scroll-behavior:smooth;min-height:100%;background-attachment:fixed;background-position:center center;background-repeat:no-repeat;background-size:cover;}
 form{margin-bottom:1em;}
-footer a{color:#ffffff;text-decoration:none;}
+footer a{color:#ffffff;text-decoration:none;padding:0.25rem 0;margin:0.25rem 0;}
 footer p{flex:1;width:100%;}
 footer{flex-direction:column;padding:2em 1em;font-style:italic;}
 h1, h2, h3, p, ul{margin-top:0;}
@@ -155,7 +155,7 @@ body{height:100%;width:100%;background-color:rgba(0,0,0,0.7);}
 .fs200{font-size:200%;}
 .mb-1{margin-bottom:1em;}
 .intro{font-size:1.25rem;color:#fff;font-style:italic;font-weight:500;}
-.intro a{color:#fff;}
+.intro a{color:#fff;padding:0.25rem;margin:0.25rem;}
 @keyframes fadein{from{opacity:0;}to{opacity:1;}}
 @keyframes slideup{0%{transform:translate(0,600px);opacity:0;}100%{transform:translate(0,0);opacity:1;}}
 @media screen and (min-width:540px){img{float:right;width:33%;height:auto;margin:0.5em 0 0.5em 1em;opacity:1;}
