@@ -5,7 +5,7 @@
 <meta name=viewport content="width=device-width, initial-scale=1">
 <meta name=description content="RentaNet provides Wordpress, Email, Storage and Domain Hosting services primarily for linux desktop users">
 <title>RentaNet - Wordpress, Email, Storage and Domain Hosting</title>
-<link rel="canonical" href="http://renta.net/">
+<link rel=canonical href="http://renta.net/">
 <link rel="shortcut icon" href="lib/img/favicon.ico" type="image/x-icon">
 <link rel=apple-touch-icon href="lib/img/apple-touch-icon.png">
 <link rel=apple-touch-icon sizes=57x57 href="lib/img/apple-touch-icon-57x57.png">
@@ -16,183 +16,7 @@
 <link rel=apple-touch-icon sizes=144x144 href="lib/img/apple-touch-icon-144x144.png">
 <link rel=apple-touch-icon sizes=152x152 href="lib/img/apple-touch-icon-152x152.png">
 <link rel=apple-touch-icon sizes=180x180 href="lib/img/apple-touch-icon-180x180.png">
-<style>html{background-image:url('lib/img/server-room-1366x768.jpg');}
-@font-face{font-family:'Quicksand';font-style:normal;font-weight:300;src:local('Quicksand Light'),
-local('Quicksand-Light'),
-url('lib/fonts/Quicksand_300.eot?#iefix') format('embedded-opentype'),
-url('lib/fonts/Quicksand_300.woff') format('woff'),
-url('lib/fonts/Quicksand_300.woff2') format('woff2'),
-url('lib/fonts/Quicksand_300.svg#Quicksand') format('svg'),
-url('lib/fonts/Quicksand_300.ttf') format('truetype');}
-@font-face{font-family:'Quicksand';font-style:normal;font-weight:400;src:local('Quicksand Regular'),
-local('Quicksand-Regular'),
-url('lib/fonts/Quicksand_400.eot?#iefix') format('embedded-opentype'),
-url('lib/fonts/Quicksand_400.woff') format('woff'),
-url('lib/fonts/Quicksand_400.woff2') format('woff2'),
-url('lib/fonts/Quicksand_400.svg#Quicksand') format('svg'),
-url('lib/fonts/Quicksand_400.ttf') format('truetype');}
-@font-face{font-family:'Quicksand';font-style:normal;font-weight:500;src:local('Quicksand Medium'),
-local('Quicksand-Medium'),
-url('lib/fonts/Quicksand_500.eot?#iefix') format('embedded-opentype'),
-url('lib/fonts/Quicksand_500.woff') format('woff'),
-url('lib/fonts/Quicksand_500.woff2') format('woff2'),
-url('lib/fonts/Quicksand_500.svg#Quicksand') format('svg'),
-url('lib/fonts/Quicksand_500.ttf') format('truetype');}
-@font-face{font-family:'icomoon';src:url('lib/fonts/icomoon.eot?23xten');src:url('lib/fonts/icomoon.eot?23xten#iefix') format('embedded-opentype'),
-url('lib/fonts/icomoon.ttf?23xten') format('truetype'),
-url('lib/fonts/icomoon.woff?23xten') format('woff'),
-url('lib/fonts/icomoon.svg?23xten#icomoon') format('svg');font-weight:normal;font-style:normal;}
-[class^="icon-"], [class*=" icon-"]{font-family:'icomoon' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;}
-.icon-envelope-o:before{content:"\f003";}
-.icon-user:before{content:"\f007";}
-.icon-home:before{content:"\f015";}
-.icon-headphones:before{content:"\f025";}
-.icon-calendar:before{content:"\f073";}
-.icon-shopping-cart:before{content:"\f07a";}
-.icon-key:before{content:"\f084";}
-.icon-cogs:before{content:"\f085";}
-.icon-gears:before{content:"\f085";}
-.icon-sign-out:before{content:"\f08b";}
-.icon-external-link:before{content:"\f08e";}
-.icon-sign-in:before{content:"\f090";}
-.icon-phone:before{content:"\f095";}
-.icon-phone-square:before{content:"\f098";}
-.icon-globe:before{content:"\f0ac";}
-.icon-group:before{content:"\f0c0";}
-.icon-users:before{content:"\f0c0";}
-.icon-sort:before{content:"\f0dc";}
-.icon-unsorted:before{content:"\f0dc";}
-.icon-sort-desc:before{content:"\f0dd";}
-.icon-sort-down:before{content:"\f0dd";}
-.icon-sort-asc:before{content:"\f0de";}
-.icon-sort-up:before{content:"\f0de";}
-.icon-envelope:before{content:"\f0e0";}
-.icon-comment-o:before{content:"\f0e5";}
-.icon-comments-o:before{content:"\f0e6";}
-.icon-sitemap:before{content:"\f0e8";}
-.icon-building-o:before{content:"\f0f7";}
-.icon-laptop:before{content:"\f109";}
-.icon-smile-o:before{content:"\f118";}
-.icon-keyboard-o:before{content:"\f11c";}
-.icon-microphone:before{content:"\f130";}
-.icon-check-square:before{content:"\f14a";}
-.icon-youtube-square:before{content:"\f166";}
-.icon-linux:before{content:"\f17c";}
-.icon-dot-circle-o:before{content:"\f192";}
-.icon-envelope-square:before{content:"\f199";}
-.icon-wordpress:before{content:"\f19a";}
-.icon-child:before{content:"\f1ae";}
-.icon-paper-plane-o:before{content:"\f1d9";}
-.icon-send-o:before{content:"\f1d9";}
-.icon-newspaper-o:before{content:"\f1ea";}
-.icon-cc-paypal:before{content:"\f1f4";}
-.icon-street-view:before{content:"\f21d";}
-.icon-server:before{content:"\f233";}
-.icon-sticky-note-o:before{content:"\f24a";}
-.icon-shopping-basket:before{content:"\f291";}
-.icon-question-circle-o:before{content:"\f29c";}
-.icon-handshake-o:before{content:"\f2b5";}
-.icon-user-circle:before{content:"\f2bd";}
-.icon-user-circle-o:before{content:"\f2be";}
-.icon-user-o:before{content:"\f2c0";}
-*, *:before, *:after{box-sizing:border-box;}
-a:hover{color:#df0000;}
-a{color:#2c5871;outline:none;transition:all .25s ease;}
-body{margin:0;padding:4.5em 0 0 0;font-size:16px;line-height:1.5;color:#2c5871;font-family:'Quicksand', sans-serif;font-weight:400;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);}
-html{scroll-behavior:smooth;min-height:100%;background-attachment:fixed;background-position:center center;background-repeat:no-repeat;background-size:cover;}
-form{margin-bottom:1em;}
-footer a{color:#ffffff;text-decoration:none;padding:0.25rem 0;margin:0.25rem 0;}
-footer p{flex:1;width:100%;}
-footer{flex-direction:column;padding:2em 1em;font-style:italic;}
-h1, h2, h3, p, ul{margin-top:0;}
-h1, h2, h3{margin-bottom:0.5em;line-height:1;}
-img{display:block;border:0;width:100%;height:auto;margin:1em 0;}
-input,textarea{color:#ffffff;width:100%;padding:0.5em;font-size:18px;box-shadow:0px 1px 4px 0px rgba(0,0,0,0.6);margin-bottom:0.75em;border:1px solid transparent;background-color:rgba(255, 255, 255, 0.3);}
-input[type=submit]{width:10rem;}
-input:hover,textarea:hover{box-shadow:0px 1px 4px 0px rgba(0,0,0,0.8);background-color:rgba(255, 255, 255, 0.5);}
-input#menu-toggle:checked ~ nav#topnav a.link{display:block;width:100%;padding:0.5em 1em;}
-input#menu-toggle:checked ~ nav#topnav a.logo{display:none;}
-input#menu-toggle:checked ~ nav#topnav{display:flex;flex-direction:column;align-items:flex-start;margin:1em 0;}
-input#menu-toggle{display:none;}
-label.label-toggle{margin:0.75rem 1rem;background:linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%);cursor:pointer;display:block;float:right;height:1.5em;width:1.5em;z-index:99;}
-li ol > li:before{content:counters(item, ".") " ";}
-li ol > li{margin:0;padding:0.5em 0 0 0;}
-nav#topnav a, a.btn, .hero a{text-decoration:none;}
-nav#topnav a.link{display:none;}
-nav#topnav{z-index:99;}
-nav, footer{align-items:center;display:flex;justify-content:space-between;}
-ol > li > ol > li > ol > li > ol > li:before{width:3.5em;}
-ol > li > ol > li > ol > li:before{width:2.75em;}
-ol > li > ol > li:before{width:1.75em;}
-ol > li:before{width:1.25em;content:counters(item, ".") ". ";display:table-cell;}
-ol > li{display:table;counter-increment:item;margin-bottom:1em;}
-ol{list-style-type:none;counter-reset:item;margin:0;padding:0;}
-pre{background-color:#eee;max-width:100%;overflow:auto;padding:1em;}
-p code{background-color:#eee;padding:.2em .4em;border-radius:2px;}
-.btn-danger:hover{color:#fff;background-color:#ff0000;border-color:#df0000;text-decoration:none;}
-.btn-danger{color:#fff;background-color:#df0000;border-color:#bf0000;}
-.btn-success:hover{color:#fff;background-color:#449d44;border-color:#398439;text-decoration:none;}
-.btn-success{color:#fff;background-color:#5cb85c;border-color:#4cae4c;}
-.btn-default:hover{color:#fff;background-color:#2c5871;border-color:#1c4861;text-decoration:none;}
-.btn-default{color:#fff;background-color:#3c6881;border-color:#2c5871;}
-.btn{background-image:none;border-radius:0.25em;border:1px solid transparent;cursor:pointer;display:inline-block;margin-bottom:0;padding:0.3em 1em;text-align:center;vertical-align:middle;white-space:nowrap;}
-.container{margin:0 auto;max-width:1140px;padding:0;}
-.heading{font-size:1.25em;text-align:center;font-style:italic;padding-bottom:0;}
-.large{font-size:4em;line-height:1;font-weight:500;padding-bottom:1em;}
-.notes h2,.extras h2{margin-bottom:0.5em;}
-.extras a,.notes a{color:#ffffff;}
-.extras a:hover,.notes a:hover{color:#000;}
-.intro a:hover{color:#ff0000;}
-.navbar a.logo{padding:0 1rem;font-size:2em;line-height:1.5;}
-.navbar a{color:#fff;}
-.navbar a.link{color:#fff;padding:0.75em 1em;}
-.navbar a:hover{text-decoration:none;color:#df0000;background-color:#fff;}
-.navbar{position:fixed;top:0;width:100%;box-shadow:0 5px 5px rgba(0,0,0,.1);z-index:99;}
-.product ul.extras{padding-left:1em;}
-.product ul{text-align:left;}
-.product:hover{box-shadow:0 0.2em 0.4em rgba(0, 0, 0, 0.5);background-color:#eeeeee;}
-.product{display:flex;width:100%;box-shadow:0 0 1.5em rgba(0, 0, 0, 0.25);transition:all .25s ease;flex-direction:column;justify-content:space-between;background-color:#ffffff;text-align:center;padding:2em;border-radius:0;}
-.ptitle{padding-top:0.25em;font-size:1.75em;font-weight:500;margin-bottom:0.5em;}
-.products{display:flex;justify-content:space-between;flex-direction:column;}
-.blu{color:#2c5871;}
-.dark{color:#3f3e3d;}
-.lite{color:#ffffff;}
-.red{color:#df0000;}
-.center{text-align:center;}
-.justify{text-align:justify;}
-.left{text-align:left;}
-.right{text-align:right;}
-.navbar,footer{background-color:rgba(63,62,61,0.95);color:#fff;}
-.about,.hero-title,.product,.linux,.privacy{background-color:rgba(255, 255, 255, 0.95);}
-.extras{background-color:rgba(44, 88, 113, 0.95);color:#ffffff;}
-.notes{background-color:rgba(223, 0, 0, 0.95);color:#ffffff;}
-.gap{margin:0;}
-.hero{display:flex;height:80vh;align-items:center;justify-content:center;}
-.hero-title{font-size:calc(48px + (150 - 48) * ((100vw - 300px)/(1600 - 300)));line-height:1;padding:0.25em 0.5em;border-radius:3em;}
-body{height:100%;width:100%;background-color:rgba(0,0,0,0.7);}
-.about,.notes,.extras,.linux,.privacy{padding:2em 1em;}
-.fs200{font-size:200%;}
-.mb-1{margin-bottom:1em;}
-.intro{font-size:1.25rem;color:#fff;font-style:italic;font-weight:500;}
-.intro a{color:#fff;padding:0.25rem;margin:0.25rem;}
-@keyframes fadein{from{opacity:0;}to{opacity:1;}}
-@keyframes slideup{0%{transform:translate(0,600px);opacity:0;}100%{transform:translate(0,0);opacity:1;}}
-@media screen and (min-width:540px){img{float:right;width:33%;height:auto;margin:0.5em 0 0.5em 1em;opacity:1;}
-.products{flex-wrap:wrap;flex-direction:row;}
-.product{width:50%;}
-}
-@media screen and (min-width:960px){footer{flex-direction:row;}
-input#menu-toggle{display:none;}
-label.label-toggle{display:none;}
-nav#topnav a.link{display:inline-block;}
-li ol > li{text-align:justify;}
-.cols{column-gap:2em;columns:2;text-align:justify;}
-footer,.about,.notes,.extras,.linux,.privacy{padding:2em;}
-.about,.products,.notes,.extras{margin:0;}
-.product{width:24%;padding:0.75em;border-radius:0.5em;margin-top:1em;margin-top:1em;}
-.gap{margin:0 0 4rem 0;}
-.navbar a.logo{display:none;}
-}</style>
+<link rel=stylesheet href="lib/css/rentanet.css">
 </head>
 <body id=top>
 <header class=navbar>
@@ -200,7 +24,7 @@ footer,.about,.notes,.extras,.linux,.privacy{padding:2em;}
 <label for=menu-toggle class=label-toggle></label>
 <nav id=topnav class=container>
 <a class=logo href="https://renta.net/" title="RentaNet provides Wordpress, Email, Storage and Domain Hosting"><b>RentaNet</b></a>
-<a class=link href="#top"><span class=icon-home></span> <b>Home</b></a>
+<a class=link href="/"><span class=icon-home></span> <b>Home</b></a>
 <a class=link href="#products"><span class=icon-shopping-basket></span> <b>Products</b></a>
 <a class=link href="#about"><span class=icon-question-circle-o></span> <b>About Us</b></a>
 <a class=link href="#extras"><span class=icon-gears></span> <b>Extras</b></a>
@@ -215,6 +39,12 @@ footer,.about,.notes,.extras,.linux,.privacy{padding:2em;}
 <a class="hero-title container" href="https://renta.net/" title="RentaNet provides Wordpress, Email, Storage and Domain hosting services">
 <b><span class=blu>Renta</span><span class=red>Net</span></b>
 </a>
+<br>
+<a class=hero-button href="https://renta.net/billing/cart.php?a=add&amp;domain=register">
+<span class=elementor-button-content-wrapper>
+<span class=elementor-button-text>Search for a new domain name</span>
+</span>
+</a>
 </div>
 <h2 class="intro center">
 <a href=tel:+61419530037 title="Midday to Midnight AEST - 2am to 2pm UTC"><b>+61 (0)419 530 037</b></a> -
@@ -223,54 +53,54 @@ footer,.about,.notes,.extras,.linux,.privacy{padding:2em;}
 <div id=products class=gap></div>
 <div class=products>
 <div itemscope itemtype="http://schema.org/Product" class=product>
-<p class="red ptitle"><span class=icon-user></span> <b itemprop="name">Personal</b></p>
-<span itemprop="offers" itemscope itemtype="http://schema.org/Offer"><p itemprop="price"><span class="large">$5</span> month</p></span>
+<p class="red ptitle"><span class=icon-user></span> <b itemprop=name>Personal</b></p>
+<p itemprop=offers itemscope itemtype="http://schema.org/Offer"><span class=large itemprop=price>$5</span> month</p>
 <p>A simple plan for first time users or those who only need a single web/mail service</p>
 <ul>
 <li><b>1</b> Domain</li>
 <li><b>1</b> Website</li>
 <li><b>1</b> Mailbox</li>
 <li><b>1GB</b> Storage</li>
-<li><b>$49</b> per year</li>
+<li><b>$49</b> AUD per year</li>
 </ul>
 <a class="btn btn-default" href="https://renta.net/billing/cart.php?a=add&pid=1"><span class=icon-shopping-cart></span> <b>ORDER NOW</b></a>
 </div>
 <div itemscope itemtype="http://schema.org/Product" class=product>
-<p class="red ptitle"><span class=icon-building-o></span> <b itemprop="name">Business</b></p>
-<span itemprop="offers" itemscope itemtype="http://schema.org/Offer"><p itemprop="price"><span class="large">$20</span> month</p></span>
-<p>A larger business plan for up to 5 domains and mailboxes for up to 10 staff members</p>
+<p class="red ptitle"><span class=icon-building-o></span> <b itemprop=name>Business</b></p>
+<p itemprop=offers itemscope itemtype="http://schema.org/Offer"><span itemprop=price class=large>$20</span> month</p>
+<p>A larger business plan with your own IP and mailserver plus Cloudflare support</p>
 <ul>
-<li><b>5</b> Domains</li>
-<li><b>5</b> Websites</li>
-<li><b>10</b> Mailboxes</li>
+<li><b>2</b> Domains</li>
+<li><b>2</b> Websites</li>
+<li><b>2</b> Mailboxes</li>
 <li><b>10GB</b> Storage</li>
-<li><b>$199</b> per year</li>
+<li><b>$199</b> AUD per year</li>
 </ul>
 <a class="btn btn-default" href="https://renta.net/billing/cart.php?a=add&pid=3"><span class=icon-shopping-cart></span> <b>ORDER NOW</b></a>
 </div>
 <div itemscope itemtype="http://schema.org/Product" class=product>
-<p class="red ptitle"><span class=icon-server></span> <b itemprop="name">VPS</b></p>
-<span itemprop="offers" itemscope itemtype="http://schema.org/Offer"><p itemprop="price"><span class="large">$30</span> month</p></span>
+<p class="red ptitle"><span class=icon-server></span> <b itemprop=name>VPS</b></p>
+<p itemprop=offers itemscope itemtype="http://schema.org/Offer"><span itemprop=price class=large>$30</span> month</p>
 <p>A fully managed secure Ubuntu <b>Virtual Private Server</b> with SSH root access</p>
 <ul>
 <li><b>1</b> CPU</li>
-<li><b>1GB</b> Memory</li>
-<li><b>1TB</b> Bandwidth</li>
-<li><b>25GB</b> Storage</li>
-<li><b>$299</b> per year</li>
+<li><b>2GB</b> Memory</li>
+<li><b>2TB</b> Bandwidth</li>
+<li><b>40GB</b> Storage</li>
+<li><b>$299</b> AUD per year</li>
 </ul>
 <a class="btn btn-default" href="https://renta.net/billing/cart.php?a=add&pid=22"><span class=icon-shopping-cart></span> <b>ORDER NOW</b></a>
 </div>
 <div itemscope itemtype="http://schema.org/Product" class=product>
-<p class="red ptitle"><span class=icon-sitemap></span> <b itemprop="name">Cloud</b></p>
-<span itemprop="offers" itemscope itemtype="http://schema.org/Offer"><p itemprop="price"><span class="large">$50</span> month</p></span>
+<p class="red ptitle"><span class=icon-sitemap></span> <b itemprop=name>Cloud</b></p>
+<p itemprop=offers itemscope itemtype="http://schema.org/Offer"><span itemprop=price class=large>$50</span> month</p>
 <p>A fully managed secure Ubuntu <b>Virtual Private Server</b> with <b>Nextcloud</b> installed</p>
 <ul>
 <li><b>2</b> CPU</li>
 <li><b>4GB</b> Memory</li>
 <li><b>3TB</b> Bandwidth</li>
 <li><b>60GB</b> Storage</li>
-<li><b>$499</b> per year</li>
+<li><b>$499</b> AUD per year</li>
 </ul>
 <a class="btn btn-default" href="https://renta.net/billing/cart.php?a=add&pid=23"><span class=icon-shopping-cart></span> <b>ORDER NOW</b></a>
 </div>
@@ -432,11 +262,11 @@ you.</p>
 <div class=gap></div>
 <footer itemscope itemtype="http://schema.org/Person">
 <p class=left>
-<a href="https://twitter.com/renta_net" class=twitter-follow-button data-show-count=false>Follow @TwitterDev</a><script async src="https://platform.twitter.com/widgets.js"></script><br>
 <a href="https://renta.net" title="Wordpress, Email, Storage and Domain Hosting Services"><b><span itemprop=brand>RentaNet</span></b></a><br>
 <span itemprop=address>PO Box 16<br>
 Broadbeach, 4218<br>
-Queensland, Australia</span>
+Queensland, Australia</span><br>
+<a class=twitter-button href="https://twitter.com/renta_net" title="Follow @renta_net on Twitter">Follow @renta_net</a>
 </p>
 <p class=justify>
 <small>
@@ -463,7 +293,5 @@ removed and you do not restrict anyone else from using your copy.
 Copyright &copy; 1998-2018 <a href="https://markc.blog" title="My personal tech blog"><b><span itemprop=givenName>Mark</span> <span itemprop=familyName>Constable</span></b></a>
 </p>
 </footer>
-<script async src="//www.googletagmanager.com/gtag/js?id=UA-60445335-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','UA-60445335-1');</script>
 </body>
 </html>

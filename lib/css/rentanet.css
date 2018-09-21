@@ -1,28 +1,28 @@
 @font-face{font-family:'Quicksand';font-style:normal;font-weight:300;src:local('Quicksand Light'),
 local('Quicksand-Light'),
-url('lib/fonts/Quicksand_300.eot?#iefix') format('embedded-opentype'),
-url('lib/fonts/Quicksand_300.woff') format('woff'),
-url('lib/fonts/Quicksand_300.woff2') format('woff2'),
-url('lib/fonts/Quicksand_300.svg#Quicksand') format('svg'),
-url('lib/fonts/Quicksand_300.ttf') format('truetype');}
+url('../fonts/Quicksand_300.eot') format('embedded-opentype'),
+url('../fonts/Quicksand_300.woff') format('woff'),
+url('../fonts/Quicksand_300.woff2') format('woff2'),
+url('../fonts/Quicksand_300.svg#Quicksand') format('svg'),
+url('../fonts/Quicksand_300.ttf') format('truetype');}
 @font-face{font-family:'Quicksand';font-style:normal;font-weight:400;src:local('Quicksand Regular'),
 local('Quicksand-Regular'),
-url('lib/fonts/Quicksand_400.eot?#iefix') format('embedded-opentype'),
-url('lib/fonts/Quicksand_400.woff') format('woff'),
-url('lib/fonts/Quicksand_400.woff2') format('woff2'),
-url('lib/fonts/Quicksand_400.svg#Quicksand') format('svg'),
-url('lib/fonts/Quicksand_400.ttf') format('truetype');}
+url('../fonts/Quicksand_400.eot') format('embedded-opentype'),
+url('../fonts/Quicksand_400.woff') format('woff'),
+url('../fonts/Quicksand_400.woff2') format('woff2'),
+url('../fonts/Quicksand_400.svg#Quicksand') format('svg'),
+url('../fonts/Quicksand_400.ttf') format('truetype');}
 @font-face{font-family:'Quicksand';font-style:normal;font-weight:500;src:local('Quicksand Medium'),
 local('Quicksand-Medium'),
-url('lib/fonts/Quicksand_500.eot?#iefix') format('embedded-opentype'),
-url('lib/fonts/Quicksand_500.woff') format('woff'),
-url('lib/fonts/Quicksand_500.woff2') format('woff2'),
-url('lib/fonts/Quicksand_500.svg#Quicksand') format('svg'),
-url('lib/fonts/Quicksand_500.ttf') format('truetype');}
-@font-face{font-family:'icomoon';src:url('lib/fonts/icomoon.eot?23xten');src:url('lib/fonts/icomoon.eot?23xten#iefix') format('embedded-opentype'),
-url('lib/fonts/icomoon.ttf?23xten') format('truetype'),
-url('lib/fonts/icomoon.woff?23xten') format('woff'),
-url('lib/fonts/icomoon.svg?23xten#icomoon') format('svg');font-weight:normal;font-style:normal;}
+url('../fonts/Quicksand_500.eot') format('embedded-opentype'),
+url('../fonts/Quicksand_500.woff') format('woff'),
+url('../fonts/Quicksand_500.woff2') format('woff2'),
+url('../fonts/Quicksand_500.svg#Quicksand') format('svg'),
+url('../fonts/Quicksand_500.ttf') format('truetype');}
+@font-face{font-family:'icomoon';src:url('../fonts/icomoon.eot');src:url('../fonts/icomoon.eot') format('embedded-opentype'),
+url('../fonts/icomoon.ttf') format('truetype'),
+url('../fonts/icomoon.woff') format('woff'),
+url('../fonts/icomoon.svg#icomoon') format('svg');font-weight:normal;font-style:normal;}
 [class^="icon-"], [class*=" icon-"]{font-family:'icomoon' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;}
 .icon-envelope-o:before{content:"\f003";}
 .icon-user:before{content:"\f007";}
@@ -76,6 +76,7 @@ url('lib/fonts/icomoon.svg?23xten#icomoon') format('svg');font-weight:normal;fon
 .icon-user-circle:before{content:"\f2bd";}
 .icon-user-circle-o:before{content:"\f2be";}
 .icon-user-o:before{content:"\f2c0";}
+html{background-image:url('../img/server-room-1366x768.jpg');}
 *, *:before, *:after{box-sizing:border-box;}
 a:hover{color:#df0000;}
 a{color:#2c5871;outline:none;transition:all .25s ease;}
@@ -101,7 +102,7 @@ li ol > li{margin:0;padding:0.5em 0 0 0;}
 nav#topnav a, a.btn, .hero a{text-decoration:none;}
 nav#topnav a.link{display:none;}
 nav#topnav{z-index:99;}
-nav, footer{align-items:center;display:flex;justify-content:space-between;}
+nav, footer{display:flex;justify-content:space-between;align-items:flex-start;}
 ol > li > ol > li > ol > li > ol > li:before{width:3.5em;}
 ol > li > ol > li > ol > li:before{width:2.75em;}
 ol > li > ol > li:before{width:1.75em;}
@@ -148,19 +149,25 @@ p code{background-color:#eee;padding:.2em .4em;border-radius:2px;}
 .extras{background-color:rgba(44, 88, 113, 0.95);color:#ffffff;}
 .notes{background-color:rgba(223, 0, 0, 0.95);color:#ffffff;}
 .gap{margin:0;}
-.hero{display:flex;height:80vh;align-items:center;justify-content:center;}
-.hero-title{font-size:calc(48px + (150 - 48) * ((100vw - 300px)/(1600 - 300)));line-height:1;padding:0.25em 0.5em;border-radius:3em;}
+.hero{display:flex;min-height:320px;align-items:center;justify-content:center;flex-direction:column}
+.hero-title{font-size:3.6rem;line-height:1;padding:0.25em 0.5em;border-radius:3em;}
+.hero-button{background-color:rgba(255,255,255,0.05);border-style:solid;border-color:rgba(255,255,255,0.1);font-size:1.5rem;padding:2rem 4rem;border-radius:0.25em;transition:all .5s;color:#fff;text-align:center;line-height:1;font-weight:500;margin-top:3rem;}
+.hero-button:hover{color:#fff;background-color:rgba(255,255,255,0.2);}
 body{height:100%;width:100%;background-color:rgba(0,0,0,0.7);}
 .about,.notes,.extras,.linux,.privacy{padding:2em 1em;}
 .fs200{font-size:200%;}
 .mb-1{margin-bottom:1em;}
 .intro{font-size:1.25rem;color:#fff;font-style:italic;font-weight:500;}
 .intro a{color:#fff;padding:0.25rem;margin:0.25rem;}
+.twitter-button{padding:0.3em 1em;background-color:#1b95e0;color:#fff;border-radius:0.3em;font-weight:500;font-style:normal;font-size:70%;}
+.twitter-button:hover{color:#fff;background-color:#0b85d0;}
 @keyframes fadein{from{opacity:0;}to{opacity:1;}}
 @keyframes slideup{0%{transform:translate(0,600px);opacity:0;}100%{transform:translate(0,0);opacity:1;}}
 @media screen and (min-width:540px){img{float:right;width:33%;height:auto;margin:0.5em 0 0.5em 1em;opacity:1;}
 .products{flex-wrap:wrap;flex-direction:row;}
 .product{width:50%;}
+.hero-title{font-size:6rem;}
+.hero{min-height:480px;}
 }
 @media screen and (min-width:960px){footer{flex-direction:row;}
 input#menu-toggle{display:none;}
@@ -173,4 +180,6 @@ footer,.about,.notes,.extras,.linux,.privacy{padding:2em;}
 .product{width:24%;padding:0.75em;border-radius:0.5em;margin-top:1em;margin-top:1em;}
 .gap{margin:0 0 4rem 0;}
 .navbar a.logo{display:none;}
+.hero-title{font-size:9rem;}
+.hero{min-height:640px;}
 }
