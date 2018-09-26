@@ -16,6 +16,11 @@
 <link rel=apple-touch-icon sizes=144x144 href="lib/img/apple-touch-icon-144x144.png">
 <link rel=apple-touch-icon sizes=152x152 href="lib/img/apple-touch-icon-152x152.png">
 <link rel=apple-touch-icon sizes=180x180 href="lib/img/apple-touch-icon-180x180.png">
+<style>*, *:before, *:after{box-sizing:border-box;}
+html{background-image:url('lib/img/server-room-1366x768.jpg');}
+html{scroll-behavior:smooth;min-height:100%;background-attachment:fixed;background-position:center center;background-repeat:no-repeat;background-size:cover;}
+body{height:100%;width:100%;background-color:rgba(0,0,0,0.7);margin:0;padding:4.5em 0 0 0;font-size:17px;line-height:1.7;color:#2c5871;font-family:'Quicksand', sans-serif;font-weight:400;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);}
+</style>
 <link rel=stylesheet href="lib/css/rentanet.css">
 </head>
 <body id=top>
@@ -23,33 +28,31 @@
 <input type=checkbox id=menu-toggle>
 <label for=menu-toggle class=label-toggle></label>
 <nav id=topnav class=container>
-<a class=logo href="https://renta.net/" title="RentaNet provides Wordpress, Email, Storage and Domain Hosting"><b>RentaNet</b></a>
-<a class=link href="/"><span class=icon-home></span> <b>Home</b></a>
-<a class=link href="#products"><span class=icon-shopping-basket></span> <b>Products</b></a>
-<a class=link href="#about"><span class=icon-question-circle-o></span> <b>About Us</b></a>
-<a class=link href="#extras"><span class=icon-gears></span> <b>Extras</b></a>
-<a class=link href="#notes"><span class=icon-newspaper-o></span> <b>Notes</b></a>
-<a class=link href="https://renta.net/billing/contact.php"><span class=icon-envelope></span> <b>Contact</b></a>
-<a class=link href="https://renta.net/billing/clientarea.php"><span class=icon-sign-in></span> <b>Sign in</b></a>
+<a class=logo href="https://renta.net/" title="RentaNet provides Wordpress, Email, Storage and Domain Hosting">RentaNet</a>
+<a class=link href="/"><span class=icon-home></span>Home</a>
+<a class=link href="#products"><span class=icon-shopping-basket></span>Products</a>
+<a class=link href="#about"><span class=icon-question-circle-o></span>About Us</a>
+<a class=link href="#extras"><span class=icon-gears></span>Extras</a>
+<a class=link href="#notes"><span class=icon-newspaper-o></span>Notes</a>
+<a class=link href="https://renta.net/billing/contact.php"><span class=icon-envelope></span>Contact</a>
+<a class=link href="https://renta.net/billing/clientarea.php"><span class=icon-sign-in></span>Sign in</a>
 </nav>
 </header>
 <main class=container>
-<h1 class="intro center">Wordpress, Email, Storage and Domain Hosting Services</h1>
 <div class="hero center">
+<h1 class=center>Wordpress, Email, Storage and Domain Hosting Services</h1>
 <a class="hero-title container" href="https://renta.net/" title="RentaNet provides Wordpress, Email, Storage and Domain hosting services">
-<b><span class=blu>Renta</span><span class=red>Net</span></b>
+<span class=blu>Renta</span><span class=red>Net</span>
 </a>
-<br>
 <a class=hero-button href="https://renta.net/billing/cart.php?a=add&amp;domain=register">
 <span class=elementor-button-content-wrapper>
 <span class=elementor-button-text>Search for a new domain name</span>
 </span>
 </a>
 </div>
-<h2 class="intro center">
-<a href=tel:+61419530037 title="Midday to Midnight AEST - 2am to 2pm UTC"><b>+61 (0)419 530 037</b></a> -
-<a href="https://spreed.me/rentanet" title="SMS or email first for Spreed support">Spreed by appointment</a>
-</h2>
+<p class=center>
+<a class=tel href=tel:+61419530037 title="Midday to Midnight AEST - 2am to 2pm UTC">+61 (0)419 530 037</a>
+</p>
 <div id=products class=gap></div>
 <div class=products>
 <div itemscope itemtype="http://schema.org/Product" class=product>
@@ -147,13 +150,14 @@ as soon as we can.</p>
 </div>
 <div id=about class=gap></div>
 <div class=about>
-<h2><span class=icon-question-circle-o></span> <a href="#about">About Us</a></h2>
+<h2><a href="#about"><span class=icon-question-circle-o></span>About Us</a></h2>
 <p class=cols>Our aim is to provide cost effective and secure hosting of <a href="https://wordpress.org">Wordpress</a> websites and IMAP Email services
 for your personal or business domain. You can purchase a new domain name
 through us or transfer your current domain and we'll manage all your online
 network services for you. Most of our clients use Wordpress as their web
 solution of choice which we fully support with automatic updates and free
-help and advice for simple problems. We specialize in using the latest
+help and advice for simple problems.</p>
+<p>We specialize in using the latest
 <a href="https://en.wikipedia.org/wiki/Ubuntu_(operating_system)#Ubuntu_Server" title="Ubuntu Server Operating System">Ubuntu Server</a>
 Linux OS on our servers with nginx and PHP7 FPM for fast
 and efficient web hosting. SMTP and IMAP email services are handled by
@@ -165,12 +169,11 @@ DELL hardware with mirrored local and offsite storage drives.</p>
 </div>
 <div id=extras class=gap></div>
 <div class=extras>
-<h2><span class=icon-gears></span> <a href="#extras">Extras</a></h2>
-<div class=cols>
-<p>All <b>Renta<span class=red>Net</span></b> clients get 200MB of free storage
+<h2><a href="#extras"><span class=icon-gears></span>Extras</a></h2>
+<p>All <b>Renta<span class=red>Net</span></b> clients get 500MB of free storage
 space at
 <a href="https://renta.cloud" title="RentaNet Cloud Storage Server">renta.cloud</a>
-so they can synchronize their
+upon request so they can synchronize their
 <a href="https://docs.nextcloud.com/server/13/user_manual/pim/sync_thunderbird.html" title="Nextcloud documentation for Thunderbird">Addressbook and Calendar</a>,
 share moderately sized files and take advantage of these cloud based features...</p>
 <ul>
@@ -192,20 +195,20 @@ Personal plan and only pay for the extra services you actually need.
 Contact us for bulk orders of extra domains, websites, mailboxes or 1GB
 storage slots which will be reduced by 5% per order of 10.</p>
 <ul>
-<li><b>$10 per year</b> per extra domain</li>
-<li><b>$10 per year</b> per extra website (no extra storage)</li>
-<li><b>$10 per year</b> per extra mailbox (no extra storage)</li>
-<li><b>$10 per year</b> per extra 1GB storage (mail, web or cloud)</li>
+<li><a href="https://renta.net/billing/cart.php?a=add&pid=7">$10 per year</a> per extra domain</li>
+<li><a href="https://renta.net/billing/cart.php?a=add&pid=9">$10 per year</a> per extra website (no extra storage)</li>
+<li><a href="https://renta.net/billing/cart.php?a=add&pid=8">$10 per year</a> per extra mailbox (no extra storage)</li>
+<li><a href="https://renta.net/billing/cart.php?a=add&pid=10">$10 per year</a> per extra 1GB storage (mail, web or cloud)</li>
 </ul>
 <p>Support is something we take seriously so here are our reasonaly priced
 options to help you out when you get stuck on some obscure problem.</p>
 <ul>
-<li><b>$60 per hour for server support</b><br>
+<li><a href="https://renta.net/billing/cart.php?a=add&pid=11">$60 per hour for server support</a><br>
 Customised Ubuntu/Debian Server side setup and PHP scripting, Wordpress
 website design and development</li>
-<li><b>$20 per hour for desktop support</b><br>
+<li><a href="https://renta.net/billing/cart.php?a=add&pid=12">$20 per hour for desktop support</a><br>
 Remote Desktop support via <a href="https://spreed.me/rentanet" title="Video/Voice/Chat">spreed.me</a> (headset required)</li>
-<li><b>$50 per year for priority support</b><br>
+<li><a href="https://renta.net/billing/cart.php?a=add&pid=21">$50 per year for priority support</a><br>
 Priority support via email, tickets, Spreed or phone</li>
 </ul>
 <p>Remote general Linux and KDE/Plasma Desktop support via
@@ -216,11 +219,9 @@ $50 delivered within Australia. Server side technical support requires
 root SSH access with a password or preferably a unique SSH Key for the
 support session.</p>
 </div>
-</div>
 <div id=notes class=gap></div>
 <div class=notes>
-<h2><span class=icon-newspaper-o></span> <a href="#notes">Notes</a></h2>
-<div class=cols>
+<h2><a href="#notes"><span class=icon-newspaper-o></span>Notes</a></h2>
 <p>Although we focus primarily on
 <a href=about-linux.html title="Our web and mail services also
 work with Microsoft&reg; and Apple&reg;
@@ -229,7 +230,7 @@ linux desktop</a> users, our services will work with any operating system
 and we will do our best to help you regardless of what computer system your
 are using.</p>
 <p>We do not provide POP email services because it does not work with our
-<b>server side spam filtering system</b> and, in general, does not play well
+server side spam filtering system and, in general, does not play well
 with shared mailboxes from multiple devices.</p>
 <p>All shared Personal and Business hosting plans include unmetered
 bandwidth for normal web and mail traffic but abusive traffic trends will
@@ -257,15 +258,14 @@ the shopping cart. If you have any billing or account issues then feel free
 to submit a <a href="https://renta.net/billing/submitticket.php?step=2&deptid=3" title="Submit a Billing ticket">billing ticket</a> so we can assist
 you.</p>
 </div>
-</div>
 </main>
 <div class=gap></div>
 <footer itemscope itemtype="http://schema.org/Person">
 <p class=left>
-<a href="https://renta.net" title="Wordpress, Email, Storage and Domain Hosting Services"><b><span itemprop=brand>RentaNet</span></b></a><br>
+<a href="https://renta.net" title="Wordpress, Email, Storage and Domain Hosting Services"><span itemprop=brand>RentaNet</span></a><br>
 <span itemprop=address>PO Box 16<br>
 Broadbeach, 4218<br>
-Queensland, Australia</span><br>
+Queensland, Australia</span><br><br>
 <a class=twitter-button href="https://twitter.com/renta_net" title="Follow @renta_net on Twitter">Follow @renta_net</a>
 </p>
 <p class=justify>
@@ -274,23 +274,24 @@ Please note that our Wordpress, Email, Storage and Domain Hosting services
 will work with any modern up to date desktop or mobile operating system
 using standard browsers and mail applications. However we encourage the
 use of free and open source Linux desktop systems such as
-<a href="https://kubuntu.org/" title="A great free desktop system"><b>Kubuntu</b></a>
+<a href="https://kubuntu.org/" title="A great free desktop system">Kubuntu</a>
 and applications including
-<a href="https://www.mozilla.org/en-US/firefox/new/" title="Free web browser"><b>Firefox</b></a>
+<a href="https://www.mozilla.org/en-US/firefox/new/" title="Free web browser">Firefox</a>
 for web browsing and
-<a href="https://www.mozilla.org/en-US/thunderbird/" title="Free email client"><b>Thunderbird</b></a>
+<a href="https://www.mozilla.org/en-US/thunderbird/" title="Free email client">Thunderbird</a>
 for IMAP email. This page content is licensed under the
-<a href="https://www.gnu.org/licenses/agpl-3.0.en.html" title="AGPL-3.0 license details"><b>AGPL-3.0</b></a>
+<a href="https://www.gnu.org/licenses/agpl-3.0.en.html" title="AGPL-3.0 license details">AGPL-3.0</a>
 and can be freely copied and modified as long as this license is not
 removed and you do not restrict anyone else from using your copy.
 </small>
 </p>
 <p class=right>
-<a href=privacy-policy.html title="Privacy Policy"><b>Our Privacy Policy</b></a><br>
-<a href="http://www.abr.business.gov.au/SearchByAbn.aspx?SearchText=69851855459" title="Australian Business Number"><b>ABN: 69 851 855 459</b></a><br>
-<a href='&#109;ail&#116;o&#58;ad&#109;in&#64;&#114;en&#116;a&#46;n&#101;t' title="Email Support"><b>Email: <span itemprop=email>ad&#109;in&#64;&#114;en&#116;a&#46;n&#101;t</span></b></a><br>
-<a href="tel:+61419530037" title="Mobile/SMS Support"><b>Mobile/SMS: <span itemprop=telephone>0419 530 037</span></b></a><br>
-Copyright &copy; 1998-2018 <a href="https://markc.blog" title="My personal tech blog"><b><span itemprop=givenName>Mark</span> <span itemprop=familyName>Constable</span></b></a>
+<a href=privacy-policy.html title="Privacy Policy">Our Privacy Policy</a><br>
+<a href="http://www.abr.business.gov.au/SearchByAbn.aspx?SearchText=69851855459" title="Australian Business Number">ABN: 69 851 855 459</a><br>
+<a href="https://spreed.me/rentanet" title="SMS or email first for Spreed support">Spreed by appointment</a><br>
+<a href='&#109;ail&#116;o&#58;ad&#109;in&#64;&#114;en&#116;a&#46;n&#101;t' title="Email Support">Email: <span itemprop=email>ad&#109;in&#64;&#114;en&#116;a&#46;n&#101;t</span></a><br>
+<a href="tel:+61419530037" title="Mobile/SMS Support">Mobile/SMS: <span itemprop=telephone>0419 530 037</span></a><br>
+Copyright &copy; 1998-2018 <a href="https://markc.blog" title="My personal tech blog"><span itemprop=givenName>Mark</span> <span itemprop=familyName>Constable</span></a>
 </p>
 </footer>
 </body>
