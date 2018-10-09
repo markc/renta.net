@@ -19,7 +19,7 @@
 <style>*, *:before, *:after{box-sizing:border-box;}
 html{background-image:url('lib/img/server-room-1366x768.jpg');}
 html{scroll-behavior:smooth;min-height:100%;background-attachment:fixed;background-position:center center;background-repeat:no-repeat;background-size:cover;}
-body{height:100%;width:100%;background-color:rgba(0,0,0,0.7);margin:0;padding:4.5em 0 0 0;font-size:17px;line-height:1.7;color:#2c5871;font-family:'Quicksand', sans-serif;font-weight:400;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);}
+body{height:100%;width:100%;background-color:rgba(0,0,0,0.7);margin:0;padding:3.5rem 0 0 0;font-size:17px;line-height:1.7;color:#2c5871;font-family:'Quicksand', sans-serif;font-weight:400;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);}
 </style>
 <link rel=stylesheet href="lib/css/rentanet.css">
 </head>
@@ -38,7 +38,7 @@ body{height:100%;width:100%;background-color:rgba(0,0,0,0.7);margin:0;padding:4.
 <a class=link href="https://renta.net/billing/clientarea.php"><span class=icon-sign-in></span>Sign in</a>
 </nav>
 </header>
-<main class=container>
+<main>
 <div class="hero center">
 <h1 class=center>Wordpress, Email, Storage and Domain Hosting Services</h1>
 <a class="hero-title container" href="https://renta.net/" title="RentaNet provides Wordpress, Email, Storage and Domain hosting services">
@@ -53,8 +53,11 @@ body{height:100%;width:100%;background-color:rgba(0,0,0,0.7);margin:0;padding:4.
 <p class=center>
 <a class=tel href=tel:+61419530037 title="Midday to Midnight AEST - 2am to 2pm UTC">+61 (0)419 530 037</a>
 </p>
+
 <div id=products class=gap></div>
-<div class=products>
+
+<section class=products>
+<div class=container>
 <div itemscope itemtype="https://schema.org/Product" class=product>
 <p class="red ptitle"><span class=icon-user></span> <b itemprop=name>Personal</b></p>
 <p itemprop=offers itemscope itemtype="https://schema.org/Offer"><span class=large itemprop=price>$5</span> month</p>
@@ -148,16 +151,19 @@ as soon as we can.</p>
 <a class="btn btn-default" href="https://renta.net/billing/cart.php?a=add&pid=21"><span class=icon-shopping-cart></span> <b>ORDER NOW</b></a>
 </div>
 </div>
+</section>
+
 <div id=about class=gap></div>
-<div class=about>
+
+<section class=about>
+<div class=container>
 <h2><a href="#about"><span class=icon-question-circle-o></span>About Us</a></h2>
 <p class=cols>Our aim is to provide cost effective and secure hosting of <a href="https://wordpress.org">Wordpress</a> websites and IMAP Email services
 for your personal or business domain. You can purchase a new domain name
 through us or transfer your current domain and we'll manage all your online
 network services for you. Most of our clients use Wordpress as their web
 solution of choice which we fully support with automatic updates and free
-help and advice for simple problems.</p>
-<p>We specialize in using the latest
+help and advice for simple problems. We specialize in using the latest
 <a href="https://en.wikipedia.org/wiki/Ubuntu_(operating_system)#Ubuntu_Server" title="Ubuntu Server Operating System">Ubuntu Server</a>
 Linux OS on our servers with nginx and PHP7 FPM for fast
 and efficient web hosting. SMTP and IMAP email services are handled by
@@ -167,9 +173,14 @@ and web security. Our servers are located in a secure Sydney data centre
 with multiple gigabit IP transit and peering links and hosted on high grade
 DELL hardware with mirrored local and offsite storage drives.</p>
 </div>
+</section>
+
 <div id=extras class=gap></div>
-<div class=extras>
+
+<section class=extras>
+<div class=container>
 <h2><a href="#extras"><span class=icon-gears></span>Extras</a></h2>
+<div class=cols>
 <p>All <b>Renta<span class=red>Net</span></b> clients get 500MB of free storage
 space at
 <a href="https://renta.cloud" title="RentaNet Cloud Storage Server">renta.cloud</a>
@@ -219,9 +230,15 @@ $50 delivered within Australia. Server side technical support requires
 root SSH access with a password or preferably a unique SSH Key for the
 support session.</p>
 </div>
+</div>
+</section>
+
 <div id=notes class=gap></div>
-<div class=notes>
+
+<section class=notes>
+<div class=container>
 <h2><a href="#notes"><span class=icon-newspaper-o></span>Notes</a></h2>
+<div class=cols>
 <p>Although we focus primarily on
 <a href=about-linux.html title="Our web and mail services also
 work with Microsoft&reg; and Apple&reg;
@@ -258,8 +275,12 @@ the shopping cart. If you have any billing or account issues then feel free
 to submit a <a href="https://renta.net/billing/submitticket.php?step=2&deptid=3" title="Submit a Billing ticket">billing ticket</a> so we can assist
 you.</p>
 </div>
+</div>
+</section>
 </main>
+
 <div class=gap></div>
+
 <footer itemscope itemtype="https://schema.org/Person">
 <p class=left>
 <a href="https://renta.net" title="Wordpress, Email, Storage and Domain Hosting Services"><span itemprop=brand>RentaNet</span></a><br>
