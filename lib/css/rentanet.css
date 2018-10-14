@@ -163,7 +163,8 @@ p code{background-color:#eee;padding:.2em .4em;border-radius:2px;}
 @keyframes slideup{0%{transform:translate(0,600px);opacity:0;}100%{transform:translate(0,0);opacity:1;}}
 @media screen and (min-width:540px){img{float:right;width:33%;height:auto;margin:0.5em 0 0.5em 1em;opacity:1;}
 .products > div{flex-wrap:wrap;flex-direction:row;}
-.product{width:50%;}
+.features{display:flex;flex-wrap:wrap;flex-direction:row;}
+.feature,.product{width:50%;}
 .hero-title{font-size:6rem;}
 .hero{min-height:480px;}
 }
@@ -178,6 +179,8 @@ footer,.about,.notes,.extras,.linux,.privacy{padding:3em 6em;}
 .about,.products,.notes,.extras{margin:0;}
 .products{padding-top:1em;}
 .product{width:24%;padding:0.75em;border-radius:0.5em;margin-top:1em;margin-top:1em;}
+.feature img{width:auto;float:none; margin:1rem auto;height:100px;}
+.feature {font-size:16px;text-align:left;width:33%;padding:0.5rem;}
 .gap{margin:0 0 3.5rem 0;}
 .navbar a.logo{display:none;}
 .hero-title{font-size:9rem;}
