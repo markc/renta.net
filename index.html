@@ -65,9 +65,9 @@ ul{margin:0.25rem 0;}
 input{color:#ffffff;width:100%;padding:0.5em;font-size:18px;box-shadow:0px 1px 4px 0px rgba(0,0,0,0.6);margin-bottom:0.75em;border:1px solid transparent;background-color:rgba(255, 255, 255, 0.3);}
 input#menu-toggle{display:none;}
 label.label-toggle{margin:0.75rem 1rem;background:linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%);display:block;float:right;height:1.5em;width:1.5em;z-index:99;}
-main{background-color:rgba(255, 255, 255, 0.8);padding:1rem;}
+main{background-color:rgba(255, 255, 255, 0.9);padding:1rem;}
 nav#topnav a.link{display:none;}
-nav#topnav{z-index:99;}
+nav#topnav{z-index:99;min-height:56px;}
 nav, footer{display:flex;justify-content:space-between;align-items:flex-start;}
 .btn-default{color:#fff;background-color:#3c6881;border-color:#2c5871;}
 .btn{background-image:none;border-radius:0.15rem;border:1px solid transparent;display:inline-block;margin-bottom:0;padding:0.3em 1em;text-align:center;vertical-align:middle;white-space:nowrap;}
@@ -114,6 +114,7 @@ input#menu-toggle:checked ~ nav#topnav a.link{display:block;width:100%;padding:0
 input#menu-toggle:checked ~ nav#topnav a.logo{display:none;}
 input#menu-toggle:checked ~ nav#topnav{display:flex;flex-direction:column;align-items:flex-start;margin:1em 0;}
 input#menu-toggle{display:none;}
+ol{padding-left:1rem;padding-bottom:1rem;}
 @keyframes fadein{from{opacity:0;}
 to{opacity:1;}
 }
@@ -256,7 +257,7 @@ are free of charge.</p>
 <h2 class=red><span class="icon-smile-o fs200"></span><br><b>Priority Support</b></h2>
 <p><span class=large>$50</span> year</p>
 </div>
-<p>For anyone in business who needs a higher assurance of support response
+<p>Businesses that need a higher assurance of support response
 time can pay a nominal annual fee and rest easy that we will always respond
 as soon as we can.</p>
 <a class="btn btn-default" href="https://renta.net/billing/cart.php?a=add&pid=21"><span class=icon-shopping-cart></span> <b>ORDER NOW</b></a>
@@ -264,21 +265,22 @@ as soon as we can.</p>
 </div>
 <div id=about class=gap></div>
 <h2><a href="#about"><span class=icon-question-circle-o></span>About Us</a></h2>
-<p class=cols>Our aim is to provide a cost-effective and secure hosting of
-<a href="https://wordpress.org">Wordpress</a> websites and IMAP Email services
-for your personal or business domain. You can purchase a new domain name
-through us or transfer your current domain and we'll manage all your online
-network services for you. Most of our clients use Wordpress as their web
-solution of choice which we fully support with automatic updates and free
-help and advice for simple problems. We specialize in using the latest
+<p class=cols>We provide secure cost-effective website and email
+hosting for your personal or business domain. You can purchase a new domain
+name through us or transfer your current domain and we'll manage all your
+online network services for you. Most of our clients use
+<a href="https://wordpress.org" title="WordPress (Free version)">WordPress</a>
+as their web solution of choice, which we fully support with automatic updates
+and  free help and advice for simple problems. We specialize in using the latest
 <a href="https://en.wikipedia.org/wiki/Ubuntu_(operating_system)#Ubuntu_Server" title="Ubuntu Server Operating System">Ubuntu Server</a>
-Linux OS on our servers with Nginx and PHP7-FPM for fast
-and efficient web hosting. SMTP and IMAP email services are handled by
-Postfix and Dovecot with MariaDB as our backend database system.
-LetsEncrypt provides free and auto-updated SSL certificates for both mail
-and web security. Our servers are located in secure Sydney data centers
-with multiple gigabit IP transit and peering links and hosted on high-grade
-DELL hardware with mirrored local and offsite storage drives.</p>
+Linux OS on our origin web servers with Nginx and PHP7+ for fast efficient
+web hosting, and Postfix/Dovecot for our email services along with
+SpamProbe to provide personalized spam filtering per mailbox. All our web
+and email services are secured with SSL certificates and file uploads use
+SFTP/SSH. We can provision hosting from multiple locations around the world
+but our main servers are located in secure Sydney data centers with
+multiple gigabit IP transit and peering links and hosted on high-grade DELL
+hardware with mirrored local and offsite storage drives.</p>
 <div id=features class=gap></div>
 <h2><a href="#features"><span class=icon-gears></span>Features</a></h2>
 <div class=features>

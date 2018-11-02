@@ -16,29 +16,144 @@
 <link rel=apple-touch-icon sizes=144x144 href="lib/img/apple-touch-icon-144x144.png">
 <link rel=apple-touch-icon sizes=152x152 href="lib/img/apple-touch-icon-152x152.png">
 <link rel=apple-touch-icon sizes=180x180 href="lib/img/apple-touch-icon-180x180.png">
-<style>*, *:before, *:after{box-sizing:border-box;}
+<style>*,
+*:before,
+*:after{box-sizing:border-box;}
 html{background-image:url('lib/img/server-room-1366x768.jpg');}
 html{scroll-behavior:smooth;min-height:100%;background-attachment:fixed;background-position:center center;background-repeat:no-repeat;background-size:cover;}
-body{height:100%;width:100%;background-color:rgba(0,0,0,0.7);margin:0;padding:4.5em 0 0 0;font-size:17px;line-height:1.7;color:#2c5871;font-family:'Quicksand', sans-serif;font-weight:400;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);}
-</style>
-<link rel=stylesheet href="lib/css/rentanet.css">
+body{height:100%;width:100%;background-color:rgba(0,0,0,0.7);margin:0;padding:3.5rem 0 0 0;font-size:17px;line-height:1.7;color:#2c5871;font-family:'Quicksand', sans-serif;font-weight:400;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);}
+@font-face{font-family:'Quicksand';font-style:normal;font-weight:400;src:local('Quicksand Regular'),
+local('Quicksand-Regular'),
+url('lib/fonts/Quicksand_400.eot') format('embedded-opentype'),
+url('lib/fonts/Quicksand_400.woff') format('woff'),
+url('lib/fonts/Quicksand_400.woff2') format('woff2'),
+url('lib/fonts/Quicksand_400.svg#Quicksand') format('svg'),
+url('lib/fonts/Quicksand_400.ttf') format('truetype');}
+@font-face{font-family:'Quicksand';font-style:normal;font-weight:500;src:local('Quicksand Medium'),
+local('Quicksand-Medium'),
+url('lib/fonts/Quicksand_500.eot') format('embedded-opentype'),
+url('lib/fonts/Quicksand_500.woff') format('woff'),
+url('lib/fonts/Quicksand_500.woff2') format('woff2'),
+url('lib/fonts/Quicksand_500.svg#Quicksand') format('svg'),
+url('lib/fonts/Quicksand_500.ttf') format('truetype');}
+@font-face{font-family:'icomoon';src:url('lib/fonts/icomoon.eot');src:url('lib/fonts/icomoon.eot') format('embedded-opentype'),
+url('lib/fonts/icomoon.ttf') format('truetype'),
+url('lib/fonts/icomoon.woff') format('woff'),
+url('lib/fonts/icomoon.svg#icomoon') format('svg');font-weight:normal;font-style:normal;}
+[class^="icon-"]{font-family:'icomoon' !important;margin-right:0.5rem;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;}
+.icon-user:before{content:"\f007";}
+.icon-home:before{content:"\f015";}
+.icon-shopping-cart:before{content:"\f07a";}
+.icon-gears:before{content:"\f085";}
+.icon-sign-in:before{content:"\f090";}
+.icon-envelope:before{content:"\f0e0";}
+.icon-building-o:before{content:"\f0f7";}
+.icon-newspaper-o:before{content:"\f1ea";}
+.icon-server:before{content:"\f233";}
+.icon-shopping-basket:before{content:"\f291";}
+.icon-question-circle-o:before{content:"\f29c";}
+.icon-handshake-o:before{content:"\f2b5";}
+.icon-laptop:before{content:"\f109";}
+.icon-smile-o:before{content:"\f118";}
+.icon-sitemap:before{content:"\f0e8";}
+a:hover{color:#cf0000;}
+a{color:#2c5871;outline:none;transition:all .4s ease;font-weight:bold;text-decoration:none;}
+h1,
+h2,
+p,
+ul{margin:0.25rem 0;}
+input{color:#ffffff;width:100%;padding:0.5em;font-size:18px;box-shadow:0px 1px 4px 0px rgba(0,0,0,0.6);margin-bottom:0.75em;border:1px solid transparent;background-color:rgba(255, 255, 255, 0.3);}
+input#menu-toggle{display:none;}
+label.label-toggle{margin:0.75rem 1rem;background:linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%);display:block;float:right;height:1.5em;width:1.5em;z-index:99;}
+main{background-color:rgba(255, 255, 255, 0.9);padding:1rem;}
+nav#topnav a.link{display:none;}
+nav#topnav{z-index:99;min-height:56px;}
+nav, footer{display:flex;justify-content:space-between;align-items:flex-start;}
+.btn-default{color:#fff;background-color:#3c6881;border-color:#2c5871;}
+.btn{background-image:none;border-radius:0.15rem;border:1px solid transparent;display:inline-block;margin-bottom:0;padding:0.3em 1em;text-align:center;vertical-align:middle;white-space:nowrap;}
+.container{margin:0 auto;max-width:1140px;}
+.large{font-size:4em;line-height:1;}
+footer,
+footer a,
+.navbar,
+.navbar a{color:#fff;}
+.navbar a.logo{padding:0 1rem;font-size:2em;line-height:1.5;}
+.navbar a.link{padding:0.75em 1em;}
+.navbar{position:fixed;top:0;width:100%;box-shadow:0 5px 5px rgba(0,0,0,.1);z-index:99;}
+.product ul{text-align:left;}
+.product{font-size:15px;line-height:1.5;display:flex;width:100%;box-shadow:0 0.2em 0.4em rgba(0, 0, 0, 0.5);flex-direction:column;justify-content:space-between;background-color:#ffffff;text-align:center;padding:2em;border-radius:0;}
+.product p,
+.product ul,
+.product h2{margin:0.25rem 0;}
+.features,.products{display:flex;justify-content:space-between;flex-direction:column;}
+.blu{color:#2c5871;}
+.red{color:#cf0000;}
+.center{text-align:center;}
+.right{text-align:right;}
+footer, .navbar{background-color:rgba(63,62,61,0.95);}
+.gap{margin:0;}
+.hero{animation:fadein 5s ease-in-out;min-height:300px;}
+.hero h1{font-size:1rem;}
+.hero-title{font-size:3.6rem;}
+.hero-button{background-color:rgba(255,255,255,0.5);border:2px solid rgba(255,255,255,0.5);padding:1rem 4rem;border-radius:0.25em;}
+.hero-button,
+.tel{display:inline-block;margin:1rem;}
+.features{text-align:center;}
+.feature p,.feature ul{font-size:16px;text-align:left;}
+.feature{padding:0.5em;}
+.feature img{width:auto;float:none;margin:0 auto;height:100px;}
+footer a{padding:0.25rem 0;margin:0.25rem 0;}
+footer p{flex:1;width:100%;}
+footer{flex-direction:column;padding:2em 1em;font-style:italic;}
+.twitter-button{padding:0.3em 1em;background-color:#1b95e0;color:#fff;border-radius:0.3em;font-weight:500;font-style:normal;font-size:70%;}
+.twitter-button:hover{color:#fff;background-color:#0b85d0;}
+.fs200{font-size:200%;}
+.gap{margin:0 0 4rem 0;}
+input:hover,textarea:hover{box-shadow:0px 1px 4px 0px rgba(0,0,0,0.8);background-color:rgba(255, 255, 255, 0.5);}
+input#menu-toggle:checked ~ nav#topnav a.link{display:block;width:100%;padding:0.5em 1em;}
+input#menu-toggle:checked ~ nav#topnav a.logo{display:none;}
+input#menu-toggle:checked ~ nav#topnav{display:flex;flex-direction:column;align-items:flex-start;margin:1em 0;}
+input#menu-toggle{display:none;}
+ol{padding-left:1rem;padding-bottom:1rem;}
+@keyframes fadein{from{opacity:0;}
+to{opacity:1;}
+}
+@media screen and (min-width:540px){.features,.products{flex-wrap:wrap;flex-direction:row;}
+.feature,.product{width:49%;}
+.hero-title{font-size:6rem;}
+.hero{min-height:400px;}
+.hero h1{font-size:1.25rem;}
+main{padding:2rem;}
+}
+@media screen and (min-width:960px){footer{flex-direction:row;}
+input#menu-toggle{display:none;}
+label.label-toggle{display:none;}
+nav#topnav a.link{display:inline-block;}
+.hero h1{font-size:1.5rem;}
+.product{width:24%;padding:0.75rem;border-radius:0.25rem;margin-top:1rem;}
+.navbar a.logo{display:none;}
+.hero-title{font-size:9rem;}
+.hero{min-height:460px;}
+.cols{column-gap:2em;columns:2;text-align:justify;}
+.feature{width:33%;}
+}</style>
 </head>
 <body id=top>
 <header class=navbar>
 <input type=checkbox id=menu-toggle>
 <label for=menu-toggle class=label-toggle></label>
 <nav id=topnav class=container>
-<a class=logo href="https://renta.net/" title="RentaNet provides Wordpress, Email, Storage and Domain hosting services"><b>RentaNet</b></a>
-<a class=link href="/"><span class=icon-home></span> <b>Home</b></a>
-<a class=link href="/#products"><span class=icon-shopping-basket></span> <b>Products</b></a>
-<a class=link href="/#about"><span class=icon-question-circle-o></span> <b>About Us</b></a>
-<a class=link href="/#extras"><span class=icon-gears></span> <b>Extras</b></a>
-<a class=link href="/#notes"><span class=icon-newspaper-o></span> <b>Notes</b></a>
-<a class=link href="https://renta.net/billing/contact.php"><span class=icon-envelope></span> <b>Contact</b></a>
-<a class=link href="https://renta.net/billing/clientarea.php"><span class=icon-sign-in></span> <b>Sign in</b></a>
+<a class=logo href="https://renta.net/" title="RentaNet provides Wordpress, Email, Storage and Domain Hosting">RentaNet</a>
+<a class=link href="/"><span class=icon-home></span>Home</a>
+<a class=link href="/#products"><span class=icon-shopping-basket></span>Products</a>
+<a class=link href="/#about"><span class=icon-question-circle-o></span>About Us</a>
+<a class=link href="/#features"><span class=icon-gears></span>Features</a>
+<a class=link href="/#notes"><span class=icon-newspaper-o></span>Notes</a>
+<a class=link href="https://renta.net/billing/contact.php"><span class=icon-envelope></span>Contact</a>
+<a class=link href="https://renta.net/billing/clientarea.php"><span class=icon-sign-in></span>Sign in</a>
 </nav>
 </header>
-<main class="container linux">
+<main class="container">
 <h1 class=center>Linux Desktop</h1>
 <p class=center><b>Renta<span class=red>Net</span></b><em> encourages and
 endorses the use of free and open source desktop and server systems for our
@@ -48,6 +163,7 @@ Microsoft&reg;, Apple&reg; and Android&reg; systems and any standard web
 browser or email program. Just because we promote the use of Linux
 based desktop distributions does not mean that our online services will
 only work with Linux.</em></p>
+<br>
 <div class="cols">
 <h2>Why do we prefer Linux?</h2>
 <p>A few years ago Linux was only considered useful on internet servers and
@@ -56,10 +172,10 @@ internet itself. Linux desktop systems were hard to use and only suitable
 for "nerds", "geeks" and hardcore software developers.</p>
 <p>These days (2017) that is no longer true. A Linux based desktop or laptop
 computer can sometimes be easier to use than a typical Windows or Mac
-computer. Not always but in many situations it can often be simpler to get
+computer. Not always but in many situations, it can often be simpler to get
 the job done with a Linux desktop.</p>
 <h2>Points for and against using Linux</h2>
-<p>First we will list some good reasons to consider using Linux and then a
+<p>First, we will list some good reasons to consider using Linux and then a
 list of what some folks would consider negative points.</p>
 <ol>
 <li><b>Free</b> as in the cost to install and use Linux except for the time
@@ -75,7 +191,7 @@ parties that want to hijack your personal information for commercial gain.
 However certain well known online social media providers will still track
 your online data.</li>
 <li><b>Efficient</b> enough to run on a wide range of PC desktop and
-laptops released in the last 10 years and does not slowdown from
+laptops released in the last 10 years and does not slow down from
 <abbr title="A process whereby successive versions of a
 computer program become perceptibly slower,
 use more memory, disk space or processing
@@ -93,24 +209,24 @@ let's look at some negative drawbacks.</p>
 and commercial business class software will not run on Linux. The native
 Linux equivalent software is often not up to the same standard and polish
 of some proprietary applications.</li>
-<li><b>Games</b>, some of the best high end AAA action games will not work
+<li><b>Games</b>, some of the best high-end AAA action games will not work
 on Linux and even though there is a huge range of games available they
 sometimes do not work as efficiently as on a PC or dedicated gaming
 console.</li>
 <li><b>Mediocre</b> hardware and peripheral support. This is not so much
-the case these days, and is steadily improving, but some obscure printers
+the case these days and is steadily improving, but some obscure printers
 and external devices have little or no driver support.</li>
 <li><b>Fragmented</b>
 <abbr title="A collection of software systems,
 which are developed and co-evolve
 in the same environment">software ecosystem</abbr>
-because of the anything goes nature of
+because of the anything-goes nature of
 many aspects of Linux from a variety of different desktop options to
 multiple "distributions" and applications all trying to achieve a similar
 end result but ultimately just competing against each other.</li>
 <li><b>Support</b> is provided, in most cases, by "the community" rather
 than a well-known single upstream provider. This can be a daunting prospect
-when a lone Linux user can't call upon friends and family to help with
+when a Linux user can't call upon friends and family to help with
 simple problems.</li>
 </ol>
 <p>We could go on and add more pros and cons for using Linux, or not, but
@@ -125,8 +241,8 @@ Linux desktop when using our online
 <a href="https://renta.net"><b>Renta<span class=red>Net</span></b></a>
 services.</p>
 </div>
-</main>
 <div class=gap></div>
+</main>
 <footer itemscope itemtype="https://schema.org/Person">
 <p class=left>
 <a href="https://renta.net" title="Wordpress, Email, Storage and Domain Hosting Services"><span itemprop=brand>RentaNet</span></a><br>
@@ -137,16 +253,9 @@ Queensland, Australia</span><br><br>
 </p>
 <p class=justify>
 <small>
-Please note that our Wordpress, Email, Storage and Domain Hosting services
+Please note that our Wordpress, Email, Storage, and Domain Hosting services
 will work with any modern up to date desktop or mobile operating system
-using standard browsers and mail applications. However we encourage the
-use of free and open source Linux desktop systems such as
-<a href="https://kubuntu.org/" title="A great free desktop system">Kubuntu</a>
-and applications including
-<a href="https://www.mozilla.org/en-US/firefox/new/" title="Free web browser">Firefox</a>
-for web browsing and
-<a href="https://www.mozilla.org/en-US/thunderbird/" title="Free email client">Thunderbird</a>
-for IMAP email. This page content is licensed under the
+using standard browsers and mail applications. This page content is licensed under the
 <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" title="AGPL-3.0 license details">AGPL-3.0</a>
 and can be freely copied and modified as long as this license is not
 removed and you do not restrict anyone else from using your copy.
